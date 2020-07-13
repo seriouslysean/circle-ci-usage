@@ -1,0 +1,35 @@
+{
+  "name": "circle-ci-usage",
+  "description": "Learn to use CircleCI with version 2.1",
+  "version": "0.1.0",
+  "author": "Sean Kennedy",
+  "bugs": {
+    "url": "https://github.com/seriouslysean/circle-ci-usage/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "jest": "^25.5.4"
+  },
+  "homepage": "https://github.com/seriouslysean/circle-ci-usage#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriouslysean/circle-ci-usage.git"
+  },
+  "engines": {
+    "node": ">=10.13.0",
+    "npm": ">=6.4.1"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "start": "node server.js",
+    "test": "jest"
+  }
+}
