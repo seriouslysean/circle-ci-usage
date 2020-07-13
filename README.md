@@ -9,8 +9,15 @@ Continuous integration with tests via CircleCI
 
 ### Running the script
 
-* Run `npm install` to install the required packages
-* Run `npm run start` to compile the index.js script and run it
+* Run `npm ci` to install the required packages
+* Run `npm run start` to run the server (port `8080` locally or `5000` via `heroku local`)
+
+### Using the API
+
+* Addition
+  * http://localhost:8080/addition/`:number1`/`:number2`
+* Subtraction
+  * http://localhost:8080/subtraction/`:number1`/`:number2`
 
 ### CircleCI Setup
 
