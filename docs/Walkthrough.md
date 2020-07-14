@@ -28,7 +28,7 @@ We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/
 2. Push the repository to GitHub
 
 <p align="center">
-    <img src="images/github-repo.png" alt="GitHub Repository" width="500" />
+    <img src="images/github-repo.png" alt="GitHub Repository" width="700" />
 </p>
 
 https://github.com/seriouslysean/circle-ci-usage
@@ -43,7 +43,7 @@ We want to make sure that our repo requires builds to pass (such as Pull Request
 4. Enable the `Require status checks to pass before merging` setting
 
 <p align="center">
-    <img src="images/github-branch-rules.png" alt="GitHub Branch Rules" width="500" />
+    <img src="images/github-branch-rules.png" alt="GitHub Branch Rules" width="700" />
 </p>
 
 _Note: You will not see any status checks in the list until you configure CircleCI._
@@ -58,11 +58,11 @@ In order to make use of CircleCI's platform, we'll need to setup our repo as a p
     - _Our repo already has a `.circleci/config.yml` file_
 
 <p align="center">
-    <img src="images/circle-ci-projects.png" alt="Projects List" width="500" />
+    <img src="images/circle-ci-projects.png" alt="Projects List" width="700" />
 </p>
 
 <p align="center">
-    <img src="images/circle-ci-setup.png" alt="Configure Project" width="500" />
+    <img src="images/circle-ci-setup.png" alt="Configure Project" width="700" />
 </p>
 
 _Note: At this point you should be able to make the status checks in GitHub required._
@@ -73,9 +73,9 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 2. See the status checks
 
 <p align="center">
-    <img src="images/github-status-checks.png" alt="GitHub Status Checks" width="500" />
+    <img src="images/github-status-checks.png" alt="GitHub Status Checks" width="700" />
 </p>
 
 <p align="center">
-    <img src="images/circle-ci-status-checks.png" alt="CircleCI Status Checks" width="500" />
+    <img src="images/circle-ci-status-checks.png" alt="CircleCI Status Checks" width="700" />
 </p>
