@@ -30,6 +30,8 @@ How to setup Continuous Integration (CI) via CircleCI.
 ### Using the API
 
 * Addition
-  * http://localhost:8080/addition/`:number1`/`:number2`
+  * http://localhost:8080/add/:number1/:number2
 * Subtraction
-  * http://localhost:8080/subtraction/`:number1`/`:number2`
+  * http://localhost:8080/subtract/:number1/:number2
+* Multiplication
+  * http://localhost:8080/multiply/:number1/:number2
