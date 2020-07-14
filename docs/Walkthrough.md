@@ -16,6 +16,7 @@ First, we need a CircleCI configuration file.
 
 <p align="center">
     <img src="images/circle-ci-config.png" alt="Circle CI Config">
+    <br>
     <em>Config values may vary, this project has one for Heroku</em>
 </p>
 
@@ -30,6 +31,7 @@ We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/
 
 <p align="center">
     <img src="images/github-repo.png" alt="GitHub Repository">
+    <br>
     <em>You could also use an existing repository</em>
 </p>
 
@@ -46,6 +48,7 @@ We want to make sure that our repo requires builds to pass (such as Pull Request
 
 <p align="center">
     <img src="images/github-branch-rules.png" alt="GitHub Branch Rules">
+    <br>
     <em>You will not see any status checks in the list until you configure CircleCI</em>
 </p>
 
@@ -62,11 +65,13 @@ In order to make use of CircleCI's platform, we'll need to setup our repo as a p
 
 <p align="center">
     <img src="images/circle-ci-projects.png" alt="Projects List">
+    <br>
     <em>List of projects on CircleCI</em>
 </p>
 
 <p align="center">
     <img src="images/circle-ci-setup.png" alt="Configure Project">
+    <br>
     <em>Your project setup screen may differ based on your repo code</em>
 </p>
 
@@ -79,10 +84,12 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 
 <p align="center">
     <img src="images/github-status-checks.png" alt="GitHub Status Checks">
+    <br>
     <em>All tests passed! :)</em>
 </p>
 
 <p align="center">
     <img src="images/circle-ci-status-checks.png" alt="CircleCI Status Checks">
+    <br>
     <em>This project has a deploy step</em>
 </p>
