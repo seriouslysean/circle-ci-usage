@@ -57,3 +57,5 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 2. See the status checks
 
 ![GitHub Status Checks](./images/github-status-checks.png)
+
+![CircleCI Status Checks](./images/circle-ci-status-checks.png)
