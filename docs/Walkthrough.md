@@ -1,6 +1,12 @@
 # Walkthrough
 
-# Create a CircleCI Config
+* [Create a CircleCI Config](#create-a-circleci-config)
+* [Push Repo to GitHub](#push-repo-to-github)
+* [Configure Branch Rules](#configure-branch-rules)
+* [Configure CircleCI Project](#configure-circleci-project)
+* [See It All In Action](#see-it-all-in-action)
+
+## Create a CircleCI Config
 
 First, we need a CircleCI configuration file.
 
@@ -12,7 +18,7 @@ First, we need a CircleCI configuration file.
 
 https://github.com/seriouslysean/circle-ci-usage/blob/master/.circleci/config.yml
 
-### Push Repo to GitHub
+## Push Repo to GitHub
 
 We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/circle-ci-usage) so we can hook everything up to CircleCI for automated testing.
 
@@ -23,7 +29,7 @@ We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/
 
 https://github.com/seriouslysean/circle-ci-usage
 
-### Configure Branch Rules
+## Configure Branch Rules
 
 We want to make sure that our repo requires builds to pass (such as Pull Requests) before being able to merge them.
 

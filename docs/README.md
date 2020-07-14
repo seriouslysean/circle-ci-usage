@@ -1,11 +1,11 @@
 # CircleCI 2.1 Usage
 
-* **Overview**
-  * [Introduction](#introduction)
-  * [Requirements](#requirements)
-  * [Usage](#usage)
-* [Walkthrough](./Walkthrough.md)
-* [Other Dependencies](./Other-Dependencies.md)
+* [Introduction](#introduction)
+* [Requirements](#requirements)
+* [Usage](#usage)
+  * [Running the app](#running-the-app)
+  * [Using the API](#using-the-api)
+* [Walkthrough](#walkthrough)
 
 ## Introduction
 
@@ -35,3 +35,7 @@ How to setup Continuous Integration (CI) via CircleCI.
   * http://localhost:8080/subtract/:number1/:number2
 * Multiplication
   * http://localhost:8080/multiply/:number1/:number2
+
+## Walkthrough
+
+For more information, [see the guide](./Walkthrough.md).
