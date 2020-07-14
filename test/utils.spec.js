@@ -1,15 +1,26 @@
-const { addition, subtraction } = require('../utils');
+const {
+    add,
+    subtract,
+    multiply,
+} = require('../utils');
 
-describe('addition', () => {
+describe('add', () => {
     it('should add two numbers together', () => {
         expect.hasAssertions();
-        expect(addition(1, 2)).toBe(3);
+        expect(add(1, 2)).toBe(3);
     });
 });
 
-describe('subtraction', () => {
+describe('subtract', () => {
     it('should subract one number from another', () => {
         expect.hasAssertions();
-        expect(subtraction(2, 1)).toBe(1);
+        expect(subtract(2, 1)).toBe(1);
+    });
+});
+
+describe('multiply', () => {
+    it('should multiply two numbers together', () => {
+        expect.hasAssertions();
+        expect(multiply(2, 2)).toBe(4);
     });
 });
