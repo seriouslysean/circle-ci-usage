@@ -14,10 +14,10 @@ First, we need a CircleCI configuration file.
 2. Add at least one job and one workflow to run on a given branch
     - _Linting or Testing is a good first option_
 
-<pre align="center">
+<p align="center">
     <img src="images/circle-ci-config.png" alt="Circle CI Config">
     <em>Config values may vary, this project has one for Heroku</em>
-</pre>
+</p>
 
 https://github.com/seriouslysean/circle-ci-usage/blob/master/.circleci/config.yml
 
@@ -28,10 +28,10 @@ We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/
 1. Ensure you've create a git repo via `git init`
 2. Push the repository to GitHub
 
-<pre align="center">
+<p align="center">
     <img src="images/github-repo.png" alt="GitHub Repository">
     <em>You could also use an existing repository</em>
-</pre>
+</p>
 
 https://github.com/seriouslysean/circle-ci-usage
 
@@ -44,10 +44,10 @@ We want to make sure that our repo requires builds to pass (such as Pull Request
 3. Edit a given branch (in this case `master`)
 4. Enable the `Require status checks to pass before merging` setting
 
-<pre align="center">
+<p align="center">
     <img src="images/github-branch-rules.png" alt="GitHub Branch Rules">
     <em>You will not see any status checks in the list until you configure CircleCI</em>
-</pre>
+</p>
 
 _Note: You will not see any status checks in the list until you configure CircleCI._
 
@@ -60,15 +60,15 @@ In order to make use of CircleCI's platform, we'll need to setup our repo as a p
 3. Click `Add Manually` and then `Start Building`
     - _Our repo already has a `.circleci/config.yml` file_
 
-<pre align="center">
+<p align="center">
     <img src="images/circle-ci-projects.png" alt="Projects List">
     <em>List of projects on CircleCI</em>
-</pre>
+</p>
 
-<pre align="center">
+<p align="center">
     <img src="images/circle-ci-setup.png" alt="Configure Project">
     <em>Your project setup screen may differ based on your repo code</em>
-</pre>
+</p>
 
 _Note: At this point you should be able to make the status checks in GitHub required._
 
@@ -77,12 +77,12 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 1. Push up a PR
 2. See the status checks
 
-<pre align="center">
+<p align="center">
     <img src="images/github-status-checks.png" alt="GitHub Status Checks">
     <em>All tests passed! :)</em>
-</pre>
+</p>
 
-<pre align="center">
+<p align="center">
     <img src="images/circle-ci-status-checks.png" alt="CircleCI Status Checks">
     <em>This project has a deploy step</em>
-</pre>
+</p>
