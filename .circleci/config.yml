@@ -8,7 +8,14 @@ orbs:
   node: circleci/node@3.0.1
 
 jobs:
-  lint-and-test:
+  lint:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run: npm run lint
+      - run: npm run test
+  test:
     executor: node/default
     steps:
       - checkout
@@ -25,11 +32,14 @@ jobs:
 workflows:
   test-and-deploy:
     jobs:
-      - lint-and-test
+      - lint
+      - test:
+          requires:
+            - lint
       - deploy:
+          requires:
+            - test
           filters:
             branches:
               only:
                 - master
-          requires:
-            - lint-and-test
