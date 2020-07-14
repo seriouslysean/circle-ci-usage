@@ -1,6 +1,12 @@
 # Walkthrough
 
-# Create a CircleCI Config
+* [Create a CircleCI Config](#create-a-circleci-config)
+* [Push Repo to GitHub](#push-repo-to-github)
+* [Configure Branch Rules](#configure-branch-rules)
+* [Configure CircleCI Project](#configure-circleci-project)
+* [See It All In Action](#see-it-all-in-action)
+
+## Create a CircleCI Config
 
 First, we need a CircleCI configuration file.
 
@@ -8,22 +14,26 @@ First, we need a CircleCI configuration file.
 2. Add at least one job and one workflow to run on a given branch
     - _Linting or Testing is a good first option_
 
-![Circle CI Config](./images/circle-ci-config.png)
+<p align="center">
+    <img src="images/circle-ci-config.png" alt="Circle CI Config" width="500" />
+</p>
 
 https://github.com/seriouslysean/circle-ci-usage/blob/master/.circleci/config.yml
 
-### Push Repo to GitHub
+## Push Repo to GitHub
 
 We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/circle-ci-usage) so we can hook everything up to CircleCI for automated testing.
 
 1. Ensure you've create a git repo via `git init`
 2. Push the repository to GitHub
 
-![GitHub Repository](./images/github-repo.png)
+<p align="center">
+    <img src="images/github-repo.png" alt="GitHub Repository" width="500" />
+</p>
 
 https://github.com/seriouslysean/circle-ci-usage
 
-### Configure Branch Rules
+## Configure Branch Rules
 
 We want to make sure that our repo requires builds to pass (such as Pull Requests) before being able to merge them.
 
@@ -32,7 +42,9 @@ We want to make sure that our repo requires builds to pass (such as Pull Request
 3. Edit a given branch (in this case `master`)
 4. Enable the `Require status checks to pass before merging` setting
 
-![GitHub Branch Rules](./images/github-branch-rules.png)
+<p align="center">
+    <img src="images/github-branch-rules.png" alt="GitHub Branch Rules" width="500" />
+</p>
 
 _Note: You will not see any status checks in the list until you configure CircleCI._
 
@@ -45,9 +57,13 @@ In order to make use of CircleCI's platform, we'll need to setup our repo as a p
 3. Click `Add Manually` and then `Start Building`
     - _Our repo already has a `.circleci/config.yml` file_
 
-![Projects List](./images/circle-ci-projects.png)
+<p align="center">
+    <img src="images/circle-ci-projects.png" alt="Projects List" width="500" />
+</p>
 
-![Configure Project](./images/circle-ci-setup.png)
+<p align="center">
+    <img src="images/circle-ci-setup.png" alt="Configure Project" width="500" />
+</p>
 
 _Note: At this point you should be able to make the status checks in GitHub required._
 
@@ -56,6 +72,10 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 1. Push up a PR
 2. See the status checks
 
-![GitHub Status Checks](./images/github-status-checks.png)
+<p align="center">
+    <img src="images/github-status-checks.png" alt="GitHub Status Checks" width="500" />
+</p>
 
-![CircleCI Status Checks](./images/circle-ci-status-checks.png)
+<p align="center">
+    <img src="images/circle-ci-status-checks.png" alt="CircleCI Status Checks" width="500" />
+</p>
