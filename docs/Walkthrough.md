@@ -25,9 +25,10 @@ We'll also need the [project hosted on GitHub](https://github.com/seriouslysean/
 1. Ensure you've create a git repo via `git init`
 2. Push the repository to GitHub
 
-![GitHub Repository](./images/github-repo.png)
-
-https://github.com/seriouslysean/circle-ci-usage
+<figure>
+    ![GitHub Repository](./images/github-repo.png)
+    <figcaption>https://github.com/seriouslysean/circle-ci-usage</figcaption>
+</figure>
 
 ## Configure Branch Rules
 
@@ -38,9 +39,10 @@ We want to make sure that our repo requires builds to pass (such as Pull Request
 3. Edit a given branch (in this case `master`)
 4. Enable the `Require status checks to pass before merging` setting
 
-![GitHub Branch Rules](./images/github-branch-rules.png)
-
-_Note: You will not see any status checks in the list until you configure CircleCI._
+<figure>
+    ![GitHub Branch Rules](./images/github-branch-rules.png)
+    <figcaption>You will not see any status checks in the list until you configure CircleCI</figcaption>
+</figure>
 
 ## Configure CircleCI Project
 
@@ -51,9 +53,15 @@ In order to make use of CircleCI's platform, we'll need to setup our repo as a p
 3. Click `Add Manually` and then `Start Building`
     - _Our repo already has a `.circleci/config.yml` file_
 
-![Projects List](./images/circle-ci-projects.png)
+<figure>
+    ![Projects List](./images/circle-ci-projects.png)
+    <figcaption>List of projects on CircleCI</figcaption>
+</figure>
 
-![Configure Project](./images/circle-ci-setup.png)
+<figure>
+    ![Configure Project](./images/circle-ci-setup.png)
+    <figcaption>Your project setup screen may differ based on your repo code</figcaption>
+</figure>
 
 _Note: At this point you should be able to make the status checks in GitHub required._
 
@@ -62,6 +70,14 @@ _Note: At this point you should be able to make the status checks in GitHub requ
 1. Push up a PR
 2. See the status checks
 
-![GitHub Status Checks](./images/github-status-checks.png)
+<figure>
+    ![GitHub Status Checks](./images/github-status-checks.png)
+    <figcaption>All tests passed! :)</figcaption>
+</figure>
 
-![CircleCI Status Checks](./images/circle-ci-status-checks.png)
+<figure>
+    ![CircleCI Status Checks](./images/circle-ci-status-checks.png)
+    <figcaption>I also have a deploy step</figcaption>
+</figure>
+
+_Note: This app deploys to http://circle-ci-usage.herokuapp.com/._
