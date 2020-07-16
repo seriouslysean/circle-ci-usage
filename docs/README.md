@@ -29,12 +29,17 @@ How to setup Continuous Integration (CI) via CircleCI.
 
 ### Using the API
 
+The routes can be tested via the project hosted on Heroku, http://circle-ci-usage.herokuapp.com/.
+
 * Addition
-  * http://localhost:8080/add/:number1/:number2
+  * http://circle-ci-usage.herokuapp.com/add/1/2
+  * `{ answer: 3 }`
 * Subtraction
-  * http://localhost:8080/subtract/:number1/:number2
+  * http://circle-ci-usage.herokuapp.com/subtract/2/1
+  * `{ answer: 1 }`
 * Multiplication
-  * http://localhost:8080/multiply/:number1/:number2
+  * http://circle-ci-usage.herokuapp.com/multiply/2/2
+  * `{ answer: 4 }`
 
 ## Walkthrough
 
