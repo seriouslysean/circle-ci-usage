@@ -2,6 +2,7 @@ const {
     add,
     subtract,
     multiply,
+    divide,
 } = require('../utils');
 
 describe('add', () => {
@@ -22,5 +23,12 @@ describe('multiply', () => {
     it('should multiply two numbers together', () => {
         expect.hasAssertions();
         expect(multiply(2, 2)).toBe(4);
+    });
+});
+
+describe('divide', () => {
+    it('should divide one number from another', () => {
+        expect.hasAssertions();
+        expect(divide(4, 2)).toBe(2);
     });
 });
