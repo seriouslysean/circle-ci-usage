@@ -3,6 +3,7 @@ const {
     add,
     subtract,
     multiply,
+    divide,
 } = require('./utils');
 
 function convertParamsToNumbers(req, res, next) {
@@ -27,6 +28,11 @@ router.get('/subtract/:n1/:n2', convertParamsToNumbers, (req, res) => {
 router.get('/multiply/:n1/:n2', convertParamsToNumbers, (req, res) => {
     const { n1, n2 } = req.params;
     res.json({ answer: multiply(n1, n2) });
+});
+
+router.get('/divide/:n1/:n2', convertParamsToNumbers, (req, res) => {
+    const { n1, n2 } = req.params;
+    res.json({ answer: divide(n1, n2) });
 });
 
 router.get('*', (req, res) => res.status(404).send({
