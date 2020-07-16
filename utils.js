@@ -1,5 +1,5 @@
 function add(n1, n2) {
-    return n1 + n2;
+    return parseInt(n1, 10) + parseInt(n2, 10);
 }
 
 function subtract(n1, n2) {
