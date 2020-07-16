@@ -40,6 +40,9 @@ The routes can be tested via the project hosted on Heroku, http://circle-ci-usag
 * Multiplication
   * http://circle-ci-usage.herokuapp.com/multiply/2/2
   * `{ answer: 4 }`
+* Division
+  * http://circle-ci-usage.herokuapp.com/divide/4/2
+  * `{ answer: 2 }`
 
 ## Walkthrough
 
