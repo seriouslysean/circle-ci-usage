@@ -9,11 +9,6 @@ describe('add', () => {
         expect.hasAssertions();
         expect(add(1, 2)).toBe(3);
     });
-
-    it('should convert strings to numbers', () => {
-        expect.hasAssertions();
-        expect(add('1', '2')).toBe(3);
-    });
 });
 
 describe('subtract', () => {
